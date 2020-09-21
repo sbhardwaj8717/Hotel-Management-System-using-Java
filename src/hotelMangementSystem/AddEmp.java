@@ -16,6 +16,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
+import com.mysql.cj.protocol.Resultset;
 
 public class AddEmp extends JFrame implements ActionListener {
 	JTextField t1,t2,t3,t4,t5,t6;
