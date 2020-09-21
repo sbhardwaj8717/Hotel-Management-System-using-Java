@@ -12,6 +12,7 @@ import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
@@ -100,6 +101,7 @@ public class AddDri extends JFrame implements ActionListener {
 		b1.setBounds(100, 460, 200, 50);
 		b1.setBackground(Color.BLUE);
 		b1.setForeground(Color.WHITE);
+		b1.addActionListener(this);
 		add(b1);
 		
 		
@@ -117,6 +119,28 @@ public class AddDri extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent ae) {
 		if(ae.getSource() == b1) {
+			String name = t1.getText();
+			String age = t2.getText();
+			String gender = null;
+			
+			if(r1.isSelected())gender= "Male";
+			else if(r2.isSelected()) gender = "Female";
+			
+			String car = t3.getText();
+			String model = t4.getText();
+			String avail =(String) c1.getSelectedItem();
+			String loc = t5.getText();
+			
+			String str = "insert into driver values('"+name+"','"+age+"','"+gender+"','"+car+"','"+model+"','"+avail+"','"+loc+"')";
+			
+			Conn c = new Conn();
+			
+			try {
+				c.s.executeUpdate(str);
+				JOptionPane.showConfirmDialog(null, "Driver is added");
+			} catch (Exception e) {
+				System.out.println(e);
+			}
 			
 		}
 	}
