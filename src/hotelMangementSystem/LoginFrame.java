@@ -81,7 +81,9 @@ public class LoginFrame extends JFrame implements ActionListener{
 					//this.setVisible(false);
 				}
 				
-			} catch (Exception e) {}
+			} catch (Exception e) {
+				System.out.println(e);
+			}
 			
 		}else if(ae.getSource() == b2) {
 			System.exit(0);
