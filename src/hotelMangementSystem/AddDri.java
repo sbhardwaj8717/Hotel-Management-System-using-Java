@@ -116,7 +116,7 @@ public class AddDri extends JFrame implements ActionListener {
 		img.setBounds(370, 100, 550, 470);
 		add(img);
 		setLayout(null);
-		setBounds(340, 140, 950, 600);
+		setBounds(340, 150, 950, 600);
 		setVisible(true);
 	}
 	@Override

@@ -33,6 +33,7 @@ public class DashBoard extends JFrame implements ActionListener{
 		mb.add(m2);
 		
 		i1 = new JMenuItem("Reception");										// Items in Menu
+		i1.addActionListener(this);
 		m1.add(i1);
 		
 		i2 = new JMenuItem("ADD NEW EMPLOYEE");
@@ -76,6 +77,8 @@ public class DashBoard extends JFrame implements ActionListener{
 			new AddRooms().setVisible(true);
 		}else if(ae.getActionCommand().equals("ADD DRIVERS")) {
 			new AddDri().setVisible(true);
+		}else if(ae.getActionCommand().equals("Reception")){
+			new Reception().setVisible(true);
 		}
 	}
 	
