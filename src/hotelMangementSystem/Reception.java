@@ -119,7 +119,7 @@ public class Reception extends JFrame implements ActionListener {
 		}else if(ae.getSource() == b5) {
 			
 		}else if(ae.getSource() == b6) {
-			
+			new ManagerInfo().setVisible(true);
 		}else if(ae.getSource() == b7) {
 			
 		}else if(ae.getSource() == b8) {

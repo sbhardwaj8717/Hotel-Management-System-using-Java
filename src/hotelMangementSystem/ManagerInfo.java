@@ -16,12 +16,12 @@ import java.sql.*;
 //import com.mysql.cj.protocol.Resultset;
 import net.proteanit.sql.DbUtils;
 
-public class EmpInfo extends JFrame implements ActionListener{
+public class ManagerInfo extends JFrame implements ActionListener{
 
 	JTable t1;
 	JButton b1,b2;
 	
-	EmpInfo(){ 
+	ManagerInfo (){ 
 		JLabel j1 = new JLabel("NAME");
 		j1.setBounds(34, 10, 50, 30);
 		add(j1);
@@ -84,7 +84,7 @@ public class EmpInfo extends JFrame implements ActionListener{
 		if(ae.getSource() == b1 ) {
 			try {
 				Conn c = new Conn(); 
-				String str = "select * from emp";
+				String str = "select * from emp where job = 'Manager'";
 				ResultSet rs = c.s.executeQuery(str);
 				t1.setModel(DbUtils.resultSetToTableModel(rs));
 			
@@ -98,7 +98,7 @@ public class EmpInfo extends JFrame implements ActionListener{
 	}
 	
 	public static void main(String[] args) {
-		new EmpInfo();
+		new ManagerInfo ();
 	}
 
 }
