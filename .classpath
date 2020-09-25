@@ -7,5 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/s bhardwaj8717/eclipse-workspace/hotel management system/external jar/mysql-connector-java-8.0.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/s bhardwaj8717/eclipse-workspace/hotel management system/external jar/rs2xml.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
