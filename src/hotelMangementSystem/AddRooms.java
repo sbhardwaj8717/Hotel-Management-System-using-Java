@@ -123,7 +123,7 @@ public class AddRooms extends JFrame implements ActionListener{
 			 String room = t1.getText();
 			 String avail = (String) c1.getSelectedItem();
 			 String clean = (String) c2.getSelectedItem();
-			 String price = t1.getText();
+			 String price = t2.getText();
 			 String bed = (String) c3.getSelectedItem();
 			 
 			 Conn c = new Conn();

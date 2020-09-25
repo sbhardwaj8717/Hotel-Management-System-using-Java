@@ -55,7 +55,7 @@ public class ManagerInfo extends JFrame implements ActionListener{
 		add(j8);
 		
 		
-		t1 = new  JTable();
+		t1 = new  JTable();								// table object with rows and columns
 		t1.setBounds(0, 40, 1000, 500);
 		add(t1);
 	
@@ -84,10 +84,9 @@ public class ManagerInfo extends JFrame implements ActionListener{
 		if(ae.getSource() == b1 ) {
 			try {
 				Conn c = new Conn(); 
-				String str = "select * from emp where job = 'Manager'";
-				ResultSet rs = c.s.executeQuery(str);
-				t1.setModel(DbUtils.resultSetToTableModel(rs));
-			
+				String str = "select * from emp where job = 'Manager'";        		// selecting the data form the table
+				ResultSet rs = c.s.executeQuery(str);	  							// executeing the query    
+				t1.setModel(DbUtils.resultSetToTableModel(rs));				        // showing the data in the table format		
 			
 			} catch (Exception e) {
 				System.out.println(e);
