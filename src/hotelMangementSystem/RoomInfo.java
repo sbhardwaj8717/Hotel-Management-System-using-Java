@@ -74,7 +74,7 @@ public class RoomInfo extends JFrame implements ActionListener{
 		img.setBounds(600, 0, 400, 500);
 		add(img);
 		getContentPane().setBackground(Color.white);
-		setBounds(300,230,1020,520);
+		setBounds(280,230,1020,520);
 		setLayout(null);
 		setVisible(true);
 		

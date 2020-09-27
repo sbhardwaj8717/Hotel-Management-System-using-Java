@@ -117,15 +117,17 @@ public class Reception extends JFrame implements ActionListener {
 		}else if(ae.getSource() == b4) {
 			new EmpInfo().setVisible(true);
 		}else if(ae.getSource() == b5) {
-			
+			new CustomerInfo().setVisible(true);
 		}else if(ae.getSource() == b6) {
 			new ManagerInfo().setVisible(true);
 		}else if(ae.getSource() == b7) {
 			
 		}else if(ae.getSource() == b8) {
-			
+			new UpdateCheck().setVisible(true);
+			this.setVisible(false);
 		}else if(ae.getSource() == b9) {
-			
+			new UpdateRoom().setVisible(true);
+			this.setVisible(false);
 		}else if(ae.getSource() == b10) {
 			
 		}else if(ae.getSource() == b11) {

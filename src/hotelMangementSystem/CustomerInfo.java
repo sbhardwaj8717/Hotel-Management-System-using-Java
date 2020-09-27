@@ -61,8 +61,8 @@ public class CustomerInfo extends JFrame implements ActionListener{
 		t1.setBounds(0, 40, 1000, 500);
 		add(t1);
 	
-		b1 = new JButton("ADD CUSTOMER");
-		b1.setBounds(350, 560, 120, 30);
+		b1 = new JButton("LOAD DATA");
+		b1.setBounds(350, 560, 130, 30);
 		b1.addActionListener(this);
 		b1.setBackground(Color.black);
 		b1.setForeground(Color.white);
@@ -70,14 +70,14 @@ public class CustomerInfo extends JFrame implements ActionListener{
 		add(b1);
 		
 		b2 = new JButton("Cancel");
-		b2.setBounds(480, 560, 120, 30);
+		b2.setBounds(490, 560, 130, 30);
 		b2.addActionListener(this);
 		add(b2);
 		
 		
 		getContentPane().setBackground(Color.white);
 		setLayout(null);
-		setBounds(300, 100, 1020, 650);
+		setBounds(280, 100, 1020, 650);
 		setVisible(true);
 	}
 	

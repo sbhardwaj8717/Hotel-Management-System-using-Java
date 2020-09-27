@@ -134,7 +134,7 @@ public class AddNewCustumer extends JFrame implements ActionListener{
 			add(imgLable);
 			getContentPane().setBackground(Color.WHITE);
 			setLayout(null);
-			setBounds(200, 200, 1000, 600);
+			setBounds(310, 150, 1000, 600);
 			setVisible(true);
 			
 			
