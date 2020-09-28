@@ -97,8 +97,6 @@ public class EmpInfo extends JFrame implements ActionListener{
 		}
 	}
 	
-	public static void main(String[] args) {
-		new EmpInfo();
-	}
+	
 
 }

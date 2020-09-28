@@ -96,8 +96,4 @@ public class ManagerInfo extends JFrame implements ActionListener{
 		}
 	}
 	
-	public static void main(String[] args) {
-		new ManagerInfo ();
-	}
-
 }

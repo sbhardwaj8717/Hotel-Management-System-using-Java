@@ -161,7 +161,5 @@ public class AddEmp extends JFrame implements ActionListener {
 	
 	}
 	
-	public static void main(String[] args) {
-		new AddEmp();
-	}
+	
 }
