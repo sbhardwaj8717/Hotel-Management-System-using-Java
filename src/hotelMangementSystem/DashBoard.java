@@ -64,7 +64,7 @@ public class DashBoard extends JFrame implements ActionListener{
 		l1.add(l2);
 		
 		setLayout(null);
-		setBounds(0, 0, 1950, 1020);
+		setBounds(-10, 0, 1950, 1020);
 		setVisible(true);
 		
 	}
