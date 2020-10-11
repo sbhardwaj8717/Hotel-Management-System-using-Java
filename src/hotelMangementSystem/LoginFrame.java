@@ -88,9 +88,5 @@ public class LoginFrame extends JFrame implements ActionListener{
 		}else if(ae.getSource() == b2) {
 			System.exit(0);
 		}
-	}
-	
-	
-
-	
+	}	
 }
